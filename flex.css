@@ -1,0 +1,178 @@
+body {
+  font-family: 'Exo 2', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #DBC208;
+}
+
+header {
+  background-color: #1E1F21;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo_color_white {
+  color: #fff;
+}
+
+.logo_color_orange {
+  color: #DBC208;
+}
+
+.logo {
+  font-weight: 800;
+}
+
+nav a {
+  text-decoration: none;
+  color: #757776;
+  margin-left: 12px;
+}
+
+nav a:active {
+  color: #DBC208;
+}
+
+.active {
+  color: #DBC208
+}
+
+.bike {
+  background-color: #1E1F21;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 522px;
+}
+
+.bike span {
+  position: absolute;
+  z-index: 1;
+}
+
+.bike span {
+font-size: 128px;
+  color: #DBC208;
+  font-weight: 800;
+}
+
+.bike img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.bike2 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: #fbf8e6;
+}
+
+.bike2 a {
+  margin-top: 40px;
+}
+
+.bike2 p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.bicycle {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.order {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.order a {
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+
+.order a:hover {
+  border-radius: 5px;
+  background-color: #fff;
+  color: #DBC208;
+}
+
+@media all and (max-width: 667px) and (min-width: 360px) {
+  body {
+    background-color: #DBC208;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .logo {
+    font-weight: 300;
+    font-size: 12px;
+    //margin-left: 24px;
+  }
+
+  .bike span {
+    font-size: 76px;
+  }
+
+  .bike {
+    width: 100%;
+    height: 360px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bike2 {
+    width: 100%;
+    margin: auto;
+    //padding: 25px;
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .bike img {
+    max-width: 360px;
+    height: auto;
+  }
+
+  header {
+    background-color: #1E1F21;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
