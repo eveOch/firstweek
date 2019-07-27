@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="main.css" as="style">
   <link rel="stylesheet" href="main.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Exo+2:300,800&display=swap&subset=cyrillic" as="style">
   <link href="https://fonts.googleapis.com/css?family=Exo+2:300,800&display=swap&subset=cyrillic" rel="stylesheet">
   <title>PRObicycle</title>
 </head>
@@ -16,48 +18,99 @@
     <nav>
       <ul>
         <li><a href="index.html">ПРОМО</a></li>
-        <li><a class="active" href="#">ВЕЛОСИПЕДЫ</a></li>
+        <li><a class="active" href="velo.">ВЕЛОСИПЕДЫ</a></li>
         <li><a href="equipment.html">ЭКИПИРОВКА</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <div class="product_list"><img class="product_list_img" src="1.jpg" alt="">
+    <div class="product_list">
+      <img class="b-lazy product_list_img" src="placeholder.png" data-src="1.jpg" alt="Image description">
       <p class="product_list_name">S-Worcs EPIC AX-S</p>
       <P class="product_list_price">&#8381; 467 00.00</P>
     </div>
-    <div class="product_list"><img class="product_list_img" src="2.jpg" alt="">
+    <div class="product_list">
+      <img class="b-lazy product_list_img" 
+	    src="placeholder.png"
+	    data-src="2.jpg"
+      alt="Image description" />
       <p class="product_list_name">S-Worcs Enduro 29</p>
       <P class="product_list_price">&#8381; 143 00.00</P>
     </div>
-    <div class="product_list"><img class="product_list_img" src="3.jpg" alt="">
+    <div class="product_list">
+      <img class="b-lazy product_list_img"
+	    src="placeholder.png"
+	    data-src="3.jpg"
+      alt="Image description"/>
       <p class="product_list_name">S-Worcs EPIC EVO</p>
       <P class="product_list_price">&#8381; 543 00.00</P>
     </div>
-    <div class="product_list"><img class="product_list_img" src="4.jpg" alt="">
+    <div class="product_list">
+      <img class="b-lazy product_list_img"
+	    src="placeholder.png"
+	    data-src="4.jpg"
+      alt="Image description" />
       <p class="product_list_name">S-Worcs Stumpjumper 29</p>
       <P class="product_list_price">&#8381; 234 00.00</P>
     </div>
-    <div class="product_list"><img class="product_list_img" src="5.jpg" alt="">
+    <div class="product_list">
+      <img class="b-lazy product_list_img" 
+	    src="placeholder.png"
+	    data-src="5.jpg"
+      alt="Image description"/>
       <p class="product_list_name">Enduro PRO</p>
       <P class="product_list_price">&#8381; 123 00.00</P>
     </div>
-    <div class="product_list"><img class="product_list_img" src="6.jpg" alt="">
+    <div class="product_list">
+        <img class="b-lazy product_list_img" 
+        src="placeholder.png"
+        data-src="6.jpg"
+        alt="Image description"/>
       <p class="product_list_name">Stumpjumper EX-EXPERT</p>
       <P class="product_list_price">&#8381; 657 00.00</P>
     </div>
-    <div class="product_list"><img class="product_list_img" src="7.jpg" alt="">
+    <div class="product_list">
+      <img class="b-lazy product_list_img" 
+	    src="placeholder.png"
+	    data-src="7.jpg"
+      alt="Image description" />
       <p class="product_list_name">S-Worcs Elite 29</p>
       <P class="product_list_price">&#8381; 345 00.00</P>
     </div>
-    <div class="product_list"><img class="product_list_img" src="8.jpg" alt="">
+    <div class="product_list">
+        <img class="b-lazy product_list_img" 
+        src="placeholder.png"
+        data-src="8.jpg"
+        alt="Image description" />
       <p class="product_list_name">Stumpjumper Comp 27.5</p>
       <P class="product_list_price">&#8381; 652 00.00</P>
     </div>
-    <div class="product_list"><img class="product_list_img" src="9.jpg" alt="">
+    <div class="product_list">
+        <img class="b-lazy product_list_img" 
+        src="placeholder.png"
+        data-src="9.jpg"
+        alt="Image description" />
       <p class="product_list_name">Stumpjumper COMP-ST 29</p>
       <P class="product_list_price">&#8381; 234 00.00</P>
     </div>
   </main>
+  <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+  <!-- <script>
+  const rev = document.querySelectorAll('.product_list img');
+  for (let index = 0; index < rev.length; index++) {
+   rev[index].classList.add('newnew');
+   rev[index].className += ' name';
+   rev[index].setAttribute('data-src','href');
+    console.log('add');
+  }
+  console.log(rev.length);
+  </script> -->
+  <script>
+   var bLazy = new Blazy(
+     {
+       offset: 500
+     }
+   );
+  </script>
 </body>
 </html>
